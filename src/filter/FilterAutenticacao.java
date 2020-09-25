@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 
 import user.Usuario;
 
-@WebFilter(urlPatterns = {"/pages/acessoSistema.jsp"})
+@WebFilter(urlPatterns = {"/pages/*"})
 public class FilterAutenticacao implements Filter{
 
 	@Override
@@ -29,11 +29,14 @@ public class FilterAutenticacao implements Filter{
 		
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpSession session = req.getSession();
+		
+		String urlAutenticar = req.getServletPath();
+		
 		Usuario usuario = (Usuario)	session.getAttribute("usuario");
 		
-		if(usuario == null) {
+		if(usuario == null && !urlAutenticar.equalsIgnoreCase("/pages/ServletAutenticacao")) {
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/login.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/autenticar.jsp?url=" + urlAutenticar);
 			dispatcher.forward(request, response);
 			return;//Redirecionar o Processo
 		}

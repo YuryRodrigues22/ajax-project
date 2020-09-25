@@ -7,6 +7,8 @@
 <title>Recursos Ajax</title>
 </head>
 <body>
+<a href="pages/ServletAutenticacao?deslogar=true"><img alt="Deslogar" title="Deslogar" height="30px" width="30px" src="resources/img/logout.png"></a>
+
 	<h3>Recursos Avançados</h3>
 	<table>
 		<tr>
@@ -23,6 +25,9 @@
 		</tr>
 		<tr>
 			<td><a></a></td>
+		</tr>
+		<tr>
+		<td></td>
 		</tr>
 	</table>
 
