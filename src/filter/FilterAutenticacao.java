@@ -43,8 +43,6 @@ public class FilterAutenticacao implements Filter{
 		
 		chain.doFilter(request, response);
 		
-		System.out.println("Interceptando...");
-		
 	}
 	
 	@Override

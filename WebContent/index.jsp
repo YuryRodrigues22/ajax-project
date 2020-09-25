@@ -18,7 +18,7 @@
 			<td><a href="pages/acessoSistema.jsp">Acessar Sistema</a></td>
 		</tr>
 		<tr>
-			<td><a></a></td>
+			<td><a href="pages/paginaPai.jsp">Load jQuery</a></td>
 		</tr>
 		<tr>
 			<td><a></a></td>
