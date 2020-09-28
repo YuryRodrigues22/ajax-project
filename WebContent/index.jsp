@@ -21,10 +21,10 @@
 			<td><a href="pages/paginaPai.jsp">Load jQuery</a></td>
 		</tr>
 		<tr>
-			<td><a></a></td>
+			<td><a href="pages/progressbar.jsp">Progress Bar</a></td>
 		</tr>
 		<tr>
-			<td><a></a></td>
+			<td><a href="pages/upload.jsp">Upload</a></td>
 		</tr>
 		<tr>
 		<td></td>
